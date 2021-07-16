@@ -67,6 +67,6 @@ Thanks to [SKAN] for creating a wonderful script.
 > Bitmap creation adopted from "How to convert Image data (JPEG/PNG/GIF) to hBITMAP?" by SKAN
 > http://www.autohotkey.com/board/topic/21213-how-to-convert-image-data-jpegpnggif-to-hbitmap/?p=139257
 
-Thanks to various anonymous members who helped me work out the whole GUI buttons and ImageSearch with GDIP.
+Thanks to Nou, SoftCore and various other members who helped me work out the whole GUI buttons, ImageSearch with GDIP and various other issues.
 
 ------------
