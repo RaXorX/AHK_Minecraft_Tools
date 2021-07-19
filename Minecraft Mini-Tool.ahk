@@ -187,6 +187,7 @@ AutoFish:
 		goto, ControlCheck
 		}
 	else if (Err > 0) {
+		sleep, 100					; A little delay before the reel-in occurs.
 		SetControlDelay -1
 		ControlClick,, ahk_id %mchwnd%,, right,, NA	; Reel-in the Fishing Rod
 		sleep, 300
@@ -195,7 +196,7 @@ AutoFish:
 		Fish_Idle := 0		; Resets the Fish_Idle Counter
 		FishCount += 1
 		Gdip_DisposeImage(SearchIn)
-		sleep, 2000
+		sleep, 500
 		}
 return
 
@@ -291,8 +292,8 @@ if LocValid = true
 	ControlSend,, {Text}%IsValid%, ahk_id %mchwnd%
 else
 	ControlSend,, {Text}%IsInvalid%, ahk_id %mchwnd%
-
-;ControlSend,, {Enter}, ahk_id %mchwnd%		; Somehow Unncessary with ControlSend.
+sleep, 100
+ControlSend,, {Enter}, ahk_id %mchwnd%
 BlockInput Off
 return
 
